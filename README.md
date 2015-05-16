@@ -1,2 +1,2 @@
-# arita
+# Arita
 common c# library
