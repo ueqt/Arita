@@ -103,6 +103,20 @@ namespace Arita.Helpers
             return epochStart.AddSeconds(span);
         }
 
+        /// <summary>
+        /// 根据UTC时间的时间戳获取本地时间
+        /// </summary>
+        /// <param name="span">UTC时间戳</param>
+        /// <returns></returns>
+        public static DateTime GetLocalTimeFromUtcTimeSpan(this int span)
+        {
+            // UTC基准时间
+            DateTime epochStart = new DateTime(1970, 1, 1);
+
+            // UTC时间戳是从1970年1月1日开始的秒数
+            return epochStart.AddSeconds(span);
+        }
+
         #endregion
 
         #endregion
